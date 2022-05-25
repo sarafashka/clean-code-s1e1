@@ -36,6 +36,7 @@ body {
 }
 .task-row-wrapper {
   display: flex;
+  margin: 20px 0 0;
 }
 ul {
   margin:0;
@@ -62,8 +63,7 @@ button:hover {
   color: #3a3a3a;
 }
 /* Heading */
-h3,
-label[for="new-task"] {
+h3 {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -89,10 +89,6 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="new-task"] {
-  display: block;
-  margin: 0 0 20px;
-}
 input#new-task {
   width: 318px;
 }
