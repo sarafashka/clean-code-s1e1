@@ -14,17 +14,17 @@
     <section class="task">
       <h3 class="title">Add Item</h3>
       <div class="task__wrapper">
-        <input class="task__name" id="new-task" type="text">
+        <input class="task__new" type="text">
         <button class="task__btn task__btn_add">Add</button>
       </div>
     </section> 
     <section class="task">
       <h3 class="title">Todo</h3>
-      <ul class="task__list" id="incomplete-tasks">
+      <ul class="task__list task__list_incomplete">
         <li class="task__item">
           <input class="task__checkbox" type="checkbox">
           <label class="task__name">Pay Bills</label>
-          <input class="task__name" type="text">
+          <input class="task__input" type="text">
           <button class="task__btn task__btn_edit">Edit</button>
           <button class="task__btn task__btn_delete">
             <img class="task__btn-img" src="./remove.svg" alt="delete">
@@ -33,7 +33,7 @@
         <li class="task__item task__item_edit">
           <input class="task__checkbox" type="checkbox">
           <label class="task__name">Go Shopping</label>
-          <input class="task__name" type="text" value="Go Shopping">
+          <input class="task__input" type="text" value="Go Shopping">
           <button class="task__btn task__btn_edit">Save</button>
           <button class="task__btn task__btn_delete">
             <img class="task__btn-img" src="./remove.svg" alt="delete">
@@ -43,11 +43,11 @@
     </section>
     <section class="task">
       <h3 class="title">Completed</h3>
-      <ul class="task__list" id="completed-tasks">
+      <ul class="task__list task__list_completed">
         <li class="task__item">
           <input class="task__checkbox" type="checkbox" checked>
           <label class="task__name">See the Doctor</label>
-          <input class="task__name" type="text">
+          <input class="task__input" type="text">
           <button class="task__btn task__btn_edit">Edit</button>
           <button class="task__btn task__btn_delete">
             <img class="task__btn-img" src="./remove.svg" alt="delete">
