@@ -1,25 +1,18 @@
 /* Basic Style */
-ul {
-  margin: 0;
-  padding: 0;
-}
-li {
-  list-style: none;
-}
 input,
 button{
   outline: none;
 }
 .body {
+  font-family: Lato, sans-serif;
   background-color: #f8f8f8;
   color: #333333;
-  font-family: Lato, sans-serif;
 }
 .header {
   width: 500px;
-  margin: 0 auto;
   display: block;
   text-align: right;
+  margin: 0 auto;
 }
 .header__logo {
   width: 100%;
@@ -28,8 +21,8 @@ button{
   font-family: fantasy, cursive;
 }
 .main {
-  display: block;
   width: 500px;
+  display: block;
   margin: 0 auto 0;
 }
 .task__name,
@@ -44,12 +37,12 @@ button{
   margin: 20px 0 0;
 }
 .task__btn {
-  background: none;
-  border: 0;
-  color: #888888;
-  font-size: 15px;
   width: 60px;
   font-family: Lato, sans-serif;
+  font-size: 15px;
+  border: 0;
+  background: none;
+  color: #888888;
   cursor: pointer;
 }
 .task__btn:hover {
@@ -57,25 +50,25 @@ button{
 }
 /* Heading */
 .title {
-  color: #333333;
   font-weight: 700;
   font-size: 15px;
-  border-bottom: 2px solid #333333;
   padding: 30px 0 10px;
   margin: 0;
+  border-bottom: 2px solid #333333;
+  color: #333333;
   text-transform: uppercase;
 }
 .task__input,
 .task__new {
-  margin: 0;
+  height: 21px;
+  font-family: Lato, sans-serif;
   font-size: 18px;
   line-height: 18px;
-  height: 21px;
+  margin: 0;
   padding: 0 9px;
   border: 1px solid #dddddd;
-  background: #ffffff;
   border-radius: 6px;
-  font-family: Lato, sans-serif;
+  background: #ffffff;
   color: #888888;
 }
 .task__input:focus,
@@ -87,13 +80,18 @@ button{
   width: 318px;
 }
 /* Task list */
+.task__list {
+  margin: 0;
+  padding: 0;
+}
 .task__item {
-  overflow: hidden;
-  padding: 20px 0;
-  border-bottom: 1px solid #eeeeee;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
+  list-style: none;
+  padding: 20px 0;
+  border-bottom: 1px solid #eeeeee;
 }
 .task__item > * {
   vertical-align: middle;
@@ -101,11 +99,11 @@ button{
 .task__checkbox {
   margin: 0 10px;
 }
-.task__name {
-  padding-left: 10px;
-  box-sizing: border-box;
-  font-size: 18px;
+.task__name {  
   width: 226px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  font-size: 18px;
 }
 .task__input {
   width: 226px;
@@ -128,8 +126,8 @@ button{
   display: none;
 }
 .task__item_edit .task__input {
-  display: inline-block;
   width: 224px;
+  display: inline-block;
 }
 .task__item_edit .task__name {
   display: none;
